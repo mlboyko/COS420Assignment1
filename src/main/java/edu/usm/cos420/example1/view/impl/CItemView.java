@@ -20,6 +20,10 @@ public class CItemView{
 	public static final int NO_CHOICE = 0;
 	/** {@value #ADDONE}  : Add one CItem to the collection of items */
     public static final int ADDONE = 1;
+    /** {@value #ADDCUSTOMER} : Add a customer */
+    public static final int ADDCUSTOMER = 2;
+    /** {@value #ADDORDER}} : Add a customer order */
+    public static final int ADDORDER = 3;
 	/** {@value #DISPLAYALL}  : Display CItem collection of items */
     public static final int EXIT = 6;
   
@@ -53,6 +57,8 @@ public class CItemView{
     System.out.println("Enter the number denoting the action " +
                        "to perform:");
     System.out.println("ADD one....................." + ADDONE);
+    System.out.println("Add Custoemr................" + ADDCUSTOMER);
+    System.out.println("Add Order..................." + ADDORDER);
     System.out.println("Exit........................" + EXIT);
   }
 

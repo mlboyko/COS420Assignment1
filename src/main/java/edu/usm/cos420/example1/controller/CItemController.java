@@ -47,6 +47,31 @@ public class CItemController {
  	 */
 	public void executeChoice (int choice) {
 	    System.out.println();
+	    switch (choice) {
+	    case 1:
+	    	atMyService.addACItem();
+	   	    System.out.println("Added one item ");
+	   	    break;
+	    case 2:
+	    	System.out.println("Adding Customer Function coming soon.");
+	    	break;
+	    case 3:
+	    	System.out.println("Adding Customer Order Function coming soon.");
+	    	break;
+/**	    case 4:
+	    	break;
+	    case 5:
+	    	break;
+	    	*/
+	    case 6:
+	    	System.out.println("Goodbye.");
+	    	break;
+	    default:
+	    	System.out.println("I'm sorry that's not a proper command, try again.");
+	    	break;
+	    }
+	    
+	    /**
 	    if (choice == CItemView.ADDONE)
 	    {
 	      	atMyService.addACItem();
@@ -54,6 +79,7 @@ public class CItemController {
 	    }
 	    else if (choice == CItemView.EXIT)
 	      System.out.println("Goodbye.");
+	      */
 	  }
 	  
 }
